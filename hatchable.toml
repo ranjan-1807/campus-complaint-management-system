@@ -1,0 +1,8 @@
+name = "CampusCare"
+tagline = "Campus complaint management"
+description = "Secure complaint reporting and tracking for students, staff, parents and administrators."
+category = "Education"
+tags = ["education","complaints","campus"]
+
+[auth]
+enabled = false

@@ -1,0 +1,1 @@
+const { newDb } = require('pg-mem'); const db = newDb(); db.public.none('CREATE TABLE profiles (id TEXT PRIMARY KEY, name TEXT);'); const result = db.public.query('INSERT INTO profiles(id, name) VALUES ($1, $2) RETURNING *', ['1', 'Test']); console.log('Inserted:', result.rows); console.log('Select:', db.public.query('SELECT * FROM profiles').rows);

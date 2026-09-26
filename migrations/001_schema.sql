@@ -1,0 +1,1 @@
+CREATE TABLE profiles (id TEXT PRIMARY KEY, email TEXT NOT NULL, name TEXT, role TEXT NOT NULL DEFAULT 'student', register_number TEXT UNIQUE, department TEXT, created_at TIMESTAMPTZ NOT NULL DEFAULT now())
